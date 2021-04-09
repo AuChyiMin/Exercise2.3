@@ -30,9 +30,12 @@ public class Mouse {
 	}
 	
 	void CostOfFood() {
+		System.out.println("Enter type of food: ");
 		String f = sc.next();
+		System.out.println("Enter price of food: ");
 		double price = sc.nextDouble(); 
 		double total = price/30; 
+		
 		switch (f) {
 		case "fruits" :System.out.println("It like to eat " + f + ".");
 				 	   System.out.printf("Cost of food for a day is RM%.2f", total);
@@ -48,7 +51,9 @@ public class Mouse {
 	}
 	
 	void calcPrice() {
+		System.out.println("Enter price of mouse: ");
 		double price = sc.nextDouble();
+		System.out.println("Enter number of mouse: ");
 		int n = sc.nextInt();
 		double total = price*n;
 		System.out.printf("Total price for " + n + " cat of this type is RM%.2f", total);
